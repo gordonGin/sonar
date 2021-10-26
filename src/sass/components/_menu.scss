@@ -1,0 +1,61 @@
+.menu {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.menu-display {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.menu-item {
+  &__container {
+    @include line1;
+    margin: 2rem;
+    max-width: 21.5rem;
+    @include font2( $size: 2rem, $color: black, $alignment: center);
+    cursor: pointer;
+
+    &:hover {
+      background-color: blueviolet;
+      @include font2( $size: 2rem, $color: white, $alignment: center);
+
+    }
+  }
+
+  &__display-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__label {
+    @include label1;
+    flex: 0.1;
+    text-align: left;
+  }
+
+  &__attribute {
+    @include font2($alignment: left);
+    flex: 0.5;
+  }
+
+  &__image {
+    max-width: 100%
+  }
+
+  &__button {
+    @include wrapper;
+    font-size: inherit;
+
+  }
+}

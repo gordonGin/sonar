@@ -1,0 +1,25 @@
+@mixin line1 {
+  border: 1px solid black;
+}
+
+@mixin font1 ($size: 2rem) {
+  font-size: $size;
+  color: red;
+}
+
+@mixin font2($alignment: 'right', $size: 3rem, $color: 'black') {
+  color: $color;
+  font-size: $size;
+  text-align: $alignment;
+}
+
+@mixin label1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+@mixin wrapper ($padding: 1rem) {
+  padding: 1rem;
+
+}

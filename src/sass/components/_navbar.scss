@@ -1,0 +1,39 @@
+.navbar {
+  &__container {
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: ease-in 0.3s;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+  &__items {
+    @include font1;
+    padding: 3rem 2rem;
+  }
+
+  &__items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    align-items: center;
+  }
+
+  &__image {
+    width: 15rem;
+    height: auto;
+    padding: 0;
+  }
+}
